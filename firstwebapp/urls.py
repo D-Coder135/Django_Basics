@@ -1,3 +1,3 @@
 urlpatterns = [
-
+    path("", views.index)
 ]
