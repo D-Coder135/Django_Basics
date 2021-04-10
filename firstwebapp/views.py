@@ -23,4 +23,4 @@ def greet(request, name):
         "name": name.capitalize()
     })
     #  Call the render function for the same purpose mentioned in index function and also add a dictionary as an
-    #  argument to it which contains the extra data which can be used by our html page.
+    #  argument to it which contains or gives our template excess to the extra data which can be used by our html code.
