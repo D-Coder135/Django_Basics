@@ -4,7 +4,8 @@ from django.http import HttpResponse
 
 def index(request):
     # return HttpResponse("Hey, this is my first web app.")
-    return render(request, "firstwebapp/index.html")
+    return render(request, "firstwebapp/index.html")  # To show a full html file as a response when the address in
+    # searched
 
 def another(request):
     return HttpResponse("Hello, User!")
