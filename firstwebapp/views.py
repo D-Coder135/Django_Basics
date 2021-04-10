@@ -16,5 +16,5 @@ def anotherfunction(request):
     return HttpResponse("This is just another view of my page!")
 
 
-def greet(response, name):
-    # return HttpResponse(f"Hello, {name.capitalize()}!")
+def greet(request, name):
+# return HttpResponse(f"Hello, {name.capitalize()}!")
