@@ -18,3 +18,6 @@ def anotherfunction(request):
 
 def greet(request, name):
 # return HttpResponse(f"Hello, {name.capitalize()}!")
+return render(request, "firstwebapp/greet.html", {
+    "name": name.capitalize()
+})
