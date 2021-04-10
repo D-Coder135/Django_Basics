@@ -17,4 +17,4 @@ def anotherfunction(request):
 
 
 def greet(response, name):
-    return HttpResponse(f"Hello, {name.capitalize()}!")
+    # return HttpResponse(f"Hello, {name.capitalize()}!")
