@@ -11,3 +11,4 @@ def another(request):
 
 
 def anotherfunction(request):
+    return HttpResponse("This is just another view of my page!")
