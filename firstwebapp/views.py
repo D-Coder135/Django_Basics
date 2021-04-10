@@ -8,3 +8,6 @@ def index(request):
 
 def another(request):
     return HttpResponse("Hello, User!")
+
+
+def anotherfunction(request):
