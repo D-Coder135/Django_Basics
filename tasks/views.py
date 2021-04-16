@@ -1,5 +1,5 @@
 from django.shortcuts import render
 
-tasks = []
+tasks = ["Wake Up!", "Code", "Eat", "Sleep!"]
 # Create your views here.
 def index(request):
