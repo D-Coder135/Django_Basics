@@ -7,7 +7,7 @@
 
 {% extends "tasks/layout.html" %} {# This is known as 'Template Inheritance' #}
 
-{% block %}
+{% block body %}
     <ul>
         {% for task in tasks %}
             <li>{{ task }}</li>  {# Created a list for each task present inside of the tasks variable.#}
