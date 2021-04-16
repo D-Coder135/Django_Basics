@@ -17,7 +17,7 @@
     {# This url 'index' will link to index.html file inside the newyear directory, which we don't want.  #}
     {# Hence there will be a namespace collision #}
     {# A namespace collision happens when two urls in different directories have same name inside their urls.py file #}
-
+    <a href="{% url 'tasks:index' %}">View Tasks</a>
 {% endblock %}
 
 {#</body>#}
