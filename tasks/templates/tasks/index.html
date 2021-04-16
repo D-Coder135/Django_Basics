@@ -4,6 +4,8 @@
 {#    <title>Tasks</title>#}
 {#</head>#}
 {#<body>#}
+{% extends "tasks/layout.html" %}
+
 <ul>
     {% for task in tasks %}
         <li>{{ task }}</li>  {# Created a list for each task present inside of the tasks variable.#}
