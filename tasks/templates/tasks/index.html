@@ -15,6 +15,7 @@
         {% endfor %}
     </ul>
     {#    <a href="{% url 'add' %}">Add a New Task</a>  --> Commented due to namespace collision #}
+    <a href="{% url 'tasks:add' %}">Add a New Task</a>
     {#Inspite of providing a physical link #}
     {#    Here we are using a Django feature to link a page by using the name of the url specified in urls.py file for that particular file or page. #}
 {% endblock %}
