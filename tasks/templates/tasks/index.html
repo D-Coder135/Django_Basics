@@ -14,6 +14,7 @@
             <li>{{ task }}</li>  {# Created a list for each task present inside of the tasks variable.#}
         {% endfor %}
     </ul>
+    <a href="{% url 'add' %}">Add a New Task</a>
 {% endblock %}
 
 {#</body>#}
