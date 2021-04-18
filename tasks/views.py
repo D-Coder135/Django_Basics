@@ -19,3 +19,4 @@ def add(request):
     return render(request, "tasks/add.html", {
         "form": NewTaskForm()
     })
+# Give this access to a variable called field which is a NewTaskForm()
