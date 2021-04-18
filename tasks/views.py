@@ -3,7 +3,7 @@ from django.shortcuts import render
 
 tasks = ["Wake Up!", "Code", "Eat", "Sleep!"]
 
-class NewTaskForm(forms.form):
+class NewTaskForm(forms.Form):
 
 
 # Create your views here.
