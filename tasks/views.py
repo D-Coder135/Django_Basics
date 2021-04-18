@@ -16,4 +16,6 @@ def index(request):
 
 
 def add(request):
-    return render(request, "tasks/add.html")
+    return render(request, "tasks/add.html", {
+        "form": NewTaskForm()
+    })
