@@ -2,6 +2,8 @@ from django.shortcuts import render
 
 tasks = ["Wake Up!", "Code", "Eat", "Sleep!"]
 
+class NewTaskForm(forms.form):
+
 
 # Create your views here.
 def index(request):
