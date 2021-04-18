@@ -10,7 +10,8 @@
 {% block body %}
     <h1>Add Task</h1>
     <form action="{% url 'tasks:add' %}" method="post">
-    {% csrf_token %}
+        {% csrf_token %}
+        {# It is a type of token which already built in Django and which allows us to make our page to submit or accept anything entered by the user.#}
         <input type="text" name="task">
         <input type="submit">
     </form>
