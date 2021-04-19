@@ -25,7 +25,9 @@ def add(request):
             # field.
             tasks.append(task)
         else:
-
+            return render(request, "tasks/add.html", {
+                "form": form
+            })
     return render(request, "tasks/add.html", {
         "form": NewTaskForm()
     })
