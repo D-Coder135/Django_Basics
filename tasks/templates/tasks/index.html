@@ -12,6 +12,8 @@
     <ul>
         {% for task in tasks %}
             <li>{{ task }}</li>  {# Created a list for each task present inside of the tasks variable.#}
+        {% empty %}
+            <li>No Tasks Yet. Please Add Some Task!</li>
         {% endfor %}
     </ul>
     {#    <a href="{% url 'add' %}">Add a New Task</a>  --> Commented due to namespace collision #}
