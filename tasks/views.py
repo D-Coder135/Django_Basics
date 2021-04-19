@@ -17,7 +17,7 @@ def index(request):
         request.session["tasks"] = []
     #     return an empty list of task if there isn't any tasks present already for a particular session.
     return render(request, "tasks/index.html", {
-        "tasks": tasks
+        "tasks": request.session["tasks"]
     })
 
 
