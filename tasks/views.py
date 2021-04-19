@@ -3,6 +3,7 @@ from django.http import HttpResponseRedirect
 from django.shortcuts import render
 from django.urls import reverse
 
+
 # tasks = []
 
 
@@ -18,6 +19,7 @@ def index(request):
     #     return an empty list of task if there isn't any tasks present already for a particular session.
     return render(request, "tasks/index.html", {
         "tasks": request.session["tasks"]
+        # Rendering request.session["tasks"] instead of rendering the global variable tasks(which is commented out).
     })
 
 
