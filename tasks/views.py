@@ -24,6 +24,7 @@ def add(request):
             task = form.cleaned_data["task"]  # Here we are storing all the task entered by the user inside the task
             # field.
             tasks.append(task)
+            return HttpResponseRedirect(reverse("tasks:index"))
         else:
             return render(request, "tasks/add.html", {
                 "form": form
