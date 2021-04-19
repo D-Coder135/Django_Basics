@@ -28,6 +28,8 @@ def add(request):
             return render(request, "tasks/add.html", {
                 "form": form
             })
+    #     Returning the add.html page again but instead of providing a new form, here we are providing the existing form
+    #     data. So that we can display information about any errors that come as well.
     return render(request, "tasks/add.html", {
         "form": NewTaskForm()
     })
