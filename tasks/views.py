@@ -31,6 +31,7 @@ def add(request):
             task = form.cleaned_data["task"]  # Here we are storing all the task entered by the user inside the task
             # field.
             # tasks.append(task)
+            request.session["tasks"] += [task]
             return HttpResponseRedirect(reverse("tasks:index"))
         # Here we are redirecting the page back to tasks page by calling django reverse method which will automatically
         # figure out the url of the index of the tasks app is and use that url to where we want to redirect by using
