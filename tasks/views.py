@@ -1,5 +1,7 @@
 from django import forms
+from django.http import HttpResponseRedirect
 from django.shortcuts import render
+from django.urls import reverse
 
 tasks = ["Wake Up!", "Code", "Eat", "Sleep!"]
 
