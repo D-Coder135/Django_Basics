@@ -21,7 +21,9 @@ def add(request):
         form = NewTaskForm(request.POST)  # Here by writing request.POST inside the () means that we are taking all of
         # data inserted by the user and filling it to the NewTaskForm i.e a new form which is created.
         if form.is_valid():
-            task = form.cleaned_data["task"]
+            task = form.cleaned_data["task"]  # Here we are storing all the task entered by the user inside the task
+            # field.
+
     return render(request, "tasks/add.html", {
         "form": NewTaskForm()
     })
