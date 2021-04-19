@@ -20,6 +20,8 @@ def add(request):
     if request.method == "POST":
         form = NewTaskForm(request.POST)  # Here by writing request.POST inside the () means that we are taking all of
         # data inserted by the user and filling it to the NewTaskForm i.e a new form which is created.
+        if form.is_valid():
+
     return render(request, "tasks/add.html", {
         "form": NewTaskForm()
     })
