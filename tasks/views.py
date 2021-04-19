@@ -27,6 +27,10 @@ def add(request):
             # field.
             tasks.append(task)
             return HttpResponseRedirect(reverse("tasks:index"))
+        # Here we are redirecting the page back to tasks page by calling django reverse method which will automatically
+        # figure out the url of the index of the tasks app is and use that url to where we want to redirect by using
+        # HttpResponseRedirect() method.
+        # Here, the HttpResponseRedirect() and the reverse() method are already built in Django.
         else:
             return render(request, "tasks/add.html", {
                 "form": form
